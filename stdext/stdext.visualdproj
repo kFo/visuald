@@ -30,7 +30,7 @@
   <useArrayBounds>0</useArrayBounds>
   <noboundscheck>0</noboundscheck>
   <useSwitchError>0</useSwitchError>
-  <useUnitTests>0</useUnitTests>
+  <useUnitTests>1</useUnitTests>
   <useInline>0</useInline>
   <release>0</release>
   <preservePaths>0</preservePaths>
@@ -41,11 +41,11 @@
   <pic>0</pic>
   <cov>0</cov>
   <nofloat>0</nofloat>
-  <Dversion>2.043</Dversion>
+  <Dversion>2</Dversion>
   <ignoreUnsupportedPragmas>0</ignoreUnsupportedPragmas>
   <compiler>0</compiler>
   <otherDMD>1</otherDMD>
-  <program>m:\s\d\rainers\windows\bin\dmd_msc.exe</program>
+  <program>dmd_msc</program>
   <imppath>..</imppath>
   <fileImppath />
   <outdir>..\bin\$(ConfigurationName)</outdir>
@@ -133,11 +133,11 @@
   <pic>0</pic>
   <cov>0</cov>
   <nofloat>0</nofloat>
-  <Dversion>2.043</Dversion>
+  <Dversion>2</Dversion>
   <ignoreUnsupportedPragmas>0</ignoreUnsupportedPragmas>
   <compiler>0</compiler>
   <otherDMD>1</otherDMD>
-  <program>m:\s\d\rainers\windows\bin\dmd_msc.exe</program>
+  <program>dmd_msc</program>
   <imppath>..</imppath>
   <fileImppath />
   <outdir>..\bin\$(ConfigurationName)</outdir>
@@ -225,11 +225,11 @@
   <pic>0</pic>
   <cov>0</cov>
   <nofloat>0</nofloat>
-  <Dversion>2.043</Dversion>
+  <Dversion>2</Dversion>
   <ignoreUnsupportedPragmas>0</ignoreUnsupportedPragmas>
   <compiler>0</compiler>
   <otherDMD>1</otherDMD>
-  <program>&quot;c:\u\MinGW\msys\1.0\bin\sh.exe&quot; -c &quot;gdmd&quot;</program>
+  <program>dmd_msc</program>
   <imppath>..</imppath>
   <fileImppath />
   <outdir>..\bin\$(ConfigurationName)</outdir>

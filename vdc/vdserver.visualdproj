@@ -30,7 +30,7 @@
   <useArrayBounds>0</useArrayBounds>
   <noboundscheck>0</noboundscheck>
   <useSwitchError>0</useSwitchError>
-  <useUnitTests>0</useUnitTests>
+  <useUnitTests>1</useUnitTests>
   <useInline>0</useInline>
   <release>0</release>
   <preservePaths>0</preservePaths>
@@ -45,7 +45,7 @@
   <ignoreUnsupportedPragmas>0</ignoreUnsupportedPragmas>
   <compiler>0</compiler>
   <otherDMD>1</otherDMD>
-  <program>m:\s\d\rainers\windows\bin\dmd_msc.exe</program>
+  <program>dmd_msc</program>
   <imppath>..</imppath>
   <fileImppath />
   <outdir>..\bin\$(ConfigurationName)</outdir>
@@ -133,11 +133,11 @@
   <pic>0</pic>
   <cov>0</cov>
   <nofloat>0</nofloat>
-  <Dversion>2.043</Dversion>
+  <Dversion>2</Dversion>
   <ignoreUnsupportedPragmas>0</ignoreUnsupportedPragmas>
   <compiler>0</compiler>
   <otherDMD>1</otherDMD>
-  <program>m:\s\d\rainers\windows\bin\dmd_msc.exe</program>
+  <program>dmd_msc</program>
   <imppath>..</imppath>
   <fileImppath />
   <outdir>..\bin\$(ConfigurationName)</outdir>
@@ -409,11 +409,11 @@
   <pic>0</pic>
   <cov>0</cov>
   <nofloat>0</nofloat>
-  <Dversion>2.043</Dversion>
+  <Dversion>2</Dversion>
   <ignoreUnsupportedPragmas>0</ignoreUnsupportedPragmas>
   <compiler>0</compiler>
   <otherDMD>1</otherDMD>
-  <program>m:\s\d\rainers\windows\bin\dmd_msc.exe</program>
+  <program>dmd_msc</program>
   <imppath>..</imppath>
   <fileImppath />
   <outdir>..\bin\$(ConfigurationName)</outdir>
@@ -553,7 +553,7 @@
   <filesToClean>*.obj;*.cmd;*.build;*.json;*.dep</filesToClean>
  </Config>
  <Folder name="vdserver">
-  <File tool="Custom" path="vdserver.idl" customcmd="path %path%;c:\l\vs9\vc\bin;c:\l\vs9\common7\IDE
+  <File tool="Custom" path="vdserver.idl" customcmd="set PATH=C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE;%PATH%
 midl /I &quot;$(WindowsSdkDir)\Include&quot; /D _DEBUG /nologo /char signed /env win32 /Oicf  /out $(OutDir) /error stub_data $(InputPath)" outfile="$(OutDir)/vdserver.tlb" />
   <File tool="Custom" path="vdserver.rc" dependencies="$(OutDir)\vdserver.tlb ..\version" customcmd="rc /fo$(OutDir)\vdserver.res &quot;/I$(OutDir)&quot; &quot;/I$(WindowsSdkDir)\include&quot; &quot;/I$(DevEnvDir)..\..\VC\include&quot; $(InputPath)" outfile="$(OutDir)\vdserver.res" linkoutput="true" />
   <File path="vdserver.reg" />

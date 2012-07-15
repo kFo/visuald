@@ -3,7 +3,7 @@
  <Config name="Debug" platform="Win32">
   <obj>0</obj>
   <link>0</link>
-  <lib>0</lib>
+  <lib>2</lib>
   <subsystem>0</subsystem>
   <multiobj>0</multiobj>
   <singleFileCompilation>0</singleFileCompilation>
@@ -30,7 +30,7 @@
   <useArrayBounds>0</useArrayBounds>
   <noboundscheck>0</noboundscheck>
   <useSwitchError>0</useSwitchError>
-  <useUnitTests>0</useUnitTests>
+  <useUnitTests>1</useUnitTests>
   <useInline>0</useInline>
   <release>0</release>
   <preservePaths>0</preservePaths>
@@ -45,7 +45,7 @@
   <ignoreUnsupportedPragmas>0</ignoreUnsupportedPragmas>
   <compiler>0</compiler>
   <otherDMD>1</otherDMD>
-  <program>m:\s\d\rainers\windows\bin\dmd_msc.exe</program>
+  <program>dmd_msc</program>
   <imppath>..</imppath>
   <fileImppath>..;resources</fileImppath>
   <outdir>..\bin\$(ConfigurationName)</outdir>
@@ -137,7 +137,7 @@
   <ignoreUnsupportedPragmas>0</ignoreUnsupportedPragmas>
   <compiler>0</compiler>
   <otherDMD>1</otherDMD>
-  <program>m:\s\d\rainers\windows\bin\dmd.exe</program>
+  <program>dmd_msc</program>
   <imppath>..</imppath>
   <fileImppath>..;resources</fileImppath>
   <outdir>..\bin\$(ConfigurationName)</outdir>
@@ -166,7 +166,7 @@
   <moduleDepsFile />
   <run>0</run>
   <runargs />
-  <runCv2pdb>1</runCv2pdb>
+  <runCv2pdb>0</runCv2pdb>
   <pathCv2pdb>m:\s\d\cv2pdb\trunk\bin\debug\cv2pdb.exe</pathCv2pdb>
   <cv2pdbPre2043>0</cv2pdbPre2043>
   <cv2pdbNoDemangle>0</cv2pdbNoDemangle>
@@ -216,10 +216,10 @@
    <File path="Resources\DSplashScreenIcon.bmp" />
    <File path="Resources\faninout.ico" />
    <File path="Resources\GroupByType.ico" />
-   <File tool="Custom" path="Resources\pkgcmd.ctc" customcmd="set PATH=%PATH%;c:\l\vs9SDK\VisualStudioIntegration\Tools\Bin
-set PATH=%PATH%;$(DevEnvDir)
-set PATH=%PATH%;$(DevEnvDir)\..\..\VC\bin
-CTC.exe $(InputPath) $(InputDir)\$(InputName).cto -Ccl -I." outfile="$(InputDir)\$(InputName).cto" />
+   <File tool="Custom" path="Resources\pkgcmd.ctc" customcmd="set PATH=C:\Program Files (x86)\Microsoft Visual Studio 2010 SDK SP1\VisualStudioIntegration\Tools\Bin;%PATH%
+set PATH=$(DevEnvDir);%PATH%
+set PATH=$(DevEnvDir)\..\..\VC\bin;%PATH%
+vsct.exe $(InputPath) $(InputDir)\$(InputName).cto -Ccl -I." outfile="$(InputDir)\$(InputName).cto" />
    <File path="Resources\refresh.ico" />
    <File path="Resources\RegExp.ico" />
    <File path="Resources\removetrace.ico" />
